@@ -220,10 +220,10 @@ async function showArticle(articleId, board) {
   const articleText = document.getElementsByClassName('article')[0]
   const colorfulLine = document.getElementById('article-color-line')
   colorfulLine.style.display = 'none'
-  titleText.innerText = ''
-  articleText.innerText = ''
+  titleText.textContent = ''
+  articleText.textContent = ''
   setTimeout(() => {
-    titleText.innerText = article.title
+    titleText.textContent = article.title
     articleText.innerHTML = article.content
     colorfulLine.style.display = 'inherit'
   }, 600)
