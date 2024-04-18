@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    image: hey-ptt
+    image: xanonymous/hey-ptt
     ports:
       - '7777:7777'
     environment:
